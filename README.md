@@ -12,4 +12,4 @@ Smart Desktop Clock System built with microcontroller, sensors, and interactive 
 ## เสนอ
 
 <img src="assets/images/panwit.jpg" width="300" height="300" alt="panwit">
-รศ.ดร. ปานวิทย์ ธุวะนุติ
+รองศาสตราจารย์ ดร. ปานวิทย์ ธุวะนุติ

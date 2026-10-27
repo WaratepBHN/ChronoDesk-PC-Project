@@ -17,7 +17,8 @@ This folder contains the firmware source code, display resources, and program lo
 
 <img src="assets/images/poster.png" width="594" height="841" alt="Poster">
 
-<video src="assets/VDO/ChronoDeskVDO.mp4" controls width="100%"></video>
+## VDO
+https://youtu.be/xJjyy5MB8Cg?si=4JZR6Z6MDQ1oD-sn
 
 ## Contributors
 

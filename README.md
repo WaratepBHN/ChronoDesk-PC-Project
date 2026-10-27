@@ -17,7 +17,7 @@ This folder contains the firmware source code, display resources, and program lo
 
 <img src="assets/images/poster.png" width="594" height="841" alt="Poster">
 
-https://github.com/WaratepBHN/ChronoDesk-PC-Project/raw/main/assets/VDO/ChronoDeskVDO.mp4
+<video src="assets/VDO/ChronoDeskVDO.mp4" controls width="100%"></video>
 
 ## Contributors
 

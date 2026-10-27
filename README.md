@@ -2,11 +2,11 @@
 
 Smart Desktop Clock System built with microcontroller, sensors, and interactive display.
 
-## Hardware 
+### Hardware 
 Circuit diagrams, component lists, wiring,
 and hardware documentation.
 
-## Software
+### Software
 Contains the source code, display resources, and program logic.
 
 <img src="assets/images/poster.png" width="594" height="841" alt="Poster">

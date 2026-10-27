@@ -16,7 +16,8 @@ This folder contains the firmware source code, display resources, and program lo
 ![Embedded Systems](https://img.shields.io/badge/Embedded-Systems-2E8B57?style=for-the-badge)
 
 <img src="assets/images/poster.png" width="594" height="841" alt="Poster">
-<video src="https://github.com/WaratepBHN/ChronoDesk-PC-Project/raw/main/assets/VDO/ChronoDeskVDO.mp4" controls="controls" width="100%"></video>
+
+https://github.com/WaratepBHN/ChronoDesk-PC-Project/raw/main/assets/VDO/ChronoDeskVDO.mp4
 
 ## Contributors
 

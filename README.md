@@ -1,6 +1,10 @@
 # ChronoDesk
 
-ChronoDesk, Smart Desktop Clock System using ESP32-C3, sensors, and an interactive display.
+ChronoDesk is a smart desktop clock that brings time, weather information, and a Pomodoro timer together in a compact device for everyday study and work. Its dedicated display keeps essential information within sight, helping users check the time, monitor their surroundings, and follow focused work sessions while their computer is being used for other tasks.
+
+The system is built around an ESP32-C3 Super Mini, a 0.96-inch ST7735 TFT display, and an SHT31 temperature and humidity sensor. It uses Wi-Fi to synchronize the clock through NTP and retrieve outdoor weather data from OpenWeatherMap, while the sensor measures indoor conditions. The current firmware includes four screens: animation, clock, weather, and a 25-minute work / 5-minute break Pomodoro timer, all controlled with a single push button.
+
+The hardware is housed in a custom 3D-printed enclosure. This repository includes the firmware, display resources, circuit diagrams, enclosure STL files, and setup documentation to help others understand, assemble, and develop their own version of ChronoDesk.
 
 ### Website
 https://waratepbhn.github.io/ChronoDesk-PC-Project/

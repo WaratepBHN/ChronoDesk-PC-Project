@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>ChronoDesk — เวลา อากาศ และช่วงโฟกัสบนโต๊ะคุณ</title>
+  <meta name="description" content="โครงงาน Physical Computing: นาฬิกาตั้งโต๊ะ ESP32-C3 พร้อมสภาพอากาศ เซนเซอร์ SHT31 และ Pomodoro รวมวงจร โค้ด และคู่มือทำตาม">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ChronoDesk — Smart Desktop Clock">
+  <meta property="og:description" content="Time, weather, and focus — within sight. Explore the project and build your own.">
+  <meta property="og:image" content="https://waratepbhn.github.io/ChronoDesk-PC-Project/assets/images/social-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preload" href="./assets/fonts/NotoSansThai-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-label="skip">ข้ามไปยังเนื้อหา</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-weather" viewBox="0 0 24 24"><path d="M6 19h12a4 4 0 0 0 0-8 6 6 0 0 0-11-1 4.5 4.5 0 0 0-1 9Z"/><path d="M7 3v2M2 6l2 1M12 3l-1 2"/></symbol>
+    <symbol id="i-focus" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M16 21h5v-5"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-animation" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5z"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M10 10h4v4h-4z"/></symbol>
+    <symbol id="i-display" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-sensor" viewBox="0 0 24 24"><path d="M10 13V5a2 2 0 0 1 4 0v8a5 5 0 1 1-4 0Z"/><path d="M12 9v9M18 5h3M18 9h2"/></symbol>
+    <symbol id="i-button" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="3"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="i-resistor" viewBox="0 0 24 24"><path d="M2 12h4M18 12h4"/><rect x="6" y="8" width="12" height="8" rx="1"/><path d="M10 8v8M14 8v8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m7 6-5 6 5 6M17 6l5 6-5 6M14 3l-4 18"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7Zm10 5v10l-10 5L2 17V7M12 12v10"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+  </defs></svg>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ChronoDesk"><span class="brand-mark" aria-hidden="true"><span></span></span>ChronoDesk<span class="brand-star" aria-hidden="true">✳</span></a>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation"><!--NAV--></nav>
+    <div class="header-actions"><button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language"><span>TH</span><span class="language-divider">/</span><span>EN</span></button><a class="github-small" href="https://github.com/WaratepBHN/ChronoDesk-PC-Project" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button id="menu-toggle" class="icon-button menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Menu"><svg class="icon"><use href="#i-menu"/></svg></button></div>
+  </header>
+  <main id="main"><!--CONTENT--></main>
+  <footer id="site-footer"><!--FOOTER--></footer>
+  <dialog id="diagram-dialog" class="diagram-dialog"><button class="icon-button dialog-close" type="button" data-close-dialog aria-label="Close"><svg class="icon"><use href="#i-close"/></svg></button><img src="./assets/images/diagram.webp" alt="ChronoDesk wiring diagram" width="1414" height="1609"><a class="button secondary" href="./assets/downloads/circuit-diagram.png" download><span data-label="download">ดาวน์โหลด</span> PNG</a></dialog>
+  <div id="announcer" class="visually-hidden" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js"></script>
+  <noscript><p class="noscript-note">This project site has a static overview and downloadable files. Enable JavaScript for the language switch and screen simulator. <a href="https://github.com/WaratepBHN/ChronoDesk-PC-Project">Open GitHub →</a></p></noscript>
+</body>
+</html>

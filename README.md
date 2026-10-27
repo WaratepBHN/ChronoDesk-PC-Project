@@ -2,6 +2,9 @@
 
 ChronoDesk, Smart Desktop Clock System using ESP32-C3, sensors, and an interactive display.
 
+### Website
+https://waratepbhn.github.io/ChronoDesk-PC-Project/
+
 ### [Hardware folder](./Hardware/)
 This folder contains the hardware design and documentation for the ChronoDesk device, including the enclosure design and circuit diagrams.
 

@@ -9,6 +9,9 @@ The hardware is housed in a custom 3D-printed enclosure. This repository include
 ### Website
 https://waratepbhn.github.io/ChronoDesk-PC-Project/
 
+### VDO
+https://youtu.be/xJjyy5MB8Cg?si=4JZR6Z6MDQ1oD-sn
+
 ### [Hardware folder](./Hardware/)
 This folder contains the hardware design and documentation for the ChronoDesk device, including the enclosure design and circuit diagrams.
 
@@ -23,9 +26,6 @@ This folder contains the firmware source code, display resources, and program lo
 ![Embedded Systems](https://img.shields.io/badge/Embedded-Systems-2E8B57?style=for-the-badge)
 
 <img src="assets/images/poster.png" width="594" height="841" alt="Poster">
-
-## VDO
-https://youtu.be/xJjyy5MB8Cg?si=4JZR6Z6MDQ1oD-sn
 
 ## Contributors
 
